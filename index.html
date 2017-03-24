@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Geometric Canvas Shapes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <canvas id="myCanvas"></canvas>
+        <!--The controller doesn't need to be run-->
+        <!--INIT controllers-->
+        <div id='position'>
+            <div id='white_box'>
+                <h1>Canvas controllers</h1>
+                <div class='row'>
+                    <div class="col-md-6">
+                        <input type='radio' value='rainbow' id='rainbow' name='color_type' checked>
+                        <label for="rainbow">Rainbow</label><br/>
+                        <input type='radio' value='gradient' id='gradient' name='color_type'>
+                        <label for="gradient">Gradient (hex)</label><br/>
+                        <div id="gradient_controller">
+                            <label for="gradient_from">Gradient from</label>
+                            <input type='color' id='gradient_from' value='#61ff00'><br/>
+                            <label for="gradient_to">Gradient to</label>
+                            <input type='color' id='gradient_to' value='#FFA500'><br/>
+                            <label for="gradient_amount">Gradient amount</label>
+                            <input type='number' id='gradient_amount' value='5'><br/>
+                        </div>
+                        <label for="color_sequence">Color sequence</label>
+                        <select id='color_sequence'>
+                            <option value="random">Random</option>
+                            <option value="sequencial" selected>Sequencial</option>
+                        </select><br/>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="shapes_size">Shapes size</label>
+                        <input type='number' id='shapes_size' value='10'><br/>
+                        <label for="shapes_space">Space between shapes</label>
+                        <input type='number' id='shapes_space' value='20'><br/>
+                        <label for="opacity_from">Opacity from</label>
+                        <input type='number' id='opacity_from' value='30' min="0" max="100"><br/>
+                        <label for="opacity_to">Opacity to</label>
+                        <input type='number' id='opacity_to' value='90' min="0" max="100"><br/>
+                        <label for="gradient_from">Timeout speed</label>
+                        <input type='text' id='timeout' value='200'><br/>
+                        <label for="shape">Shape</label>
+                        <select id='shape'>
+                            <option value="random">Random</option>
+                            <option value="sequencial" >Sequencial</option>
+                            <option value="starfive">Star</option>
+                            <option value="square">Square</option>
+                            <option value="circle">Circle</option>
+                            <option value="triangle">Triangle</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END controllers-->
+        <link rel="stylesheet" href="dist/css.css"/>
+        <script type="text/javascript" src="dist/js.js"></script>
+    </body>
+
+</html>

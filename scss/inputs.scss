@@ -1,0 +1,41 @@
+/*CSS just for controllers, doesn't need to be run :)*/
+#position{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+#white_box{
+    font-family:sans-serif; 
+    z-index:1;
+    width:100%; 
+    margin:auto;	
+    margin-top:5%;
+    max-width:600px;	
+    background:rgba(255,255,255,0.7);
+    padding:20px;
+    border-radius:5px;
+    border:solid 1px #cecece;
+    font-size:14px;
+    h1{
+        text-align:center;
+    }
+    label{
+        cursor:pointer;
+    }
+    select{
+        max-width:80px;
+        height:20px;
+        width:100%;
+    }
+    input[type='text'],
+    input[type='number']{
+        max-width:60px;
+        height:20px;
+        width:100%;
+    }
+    #gradient_controller{
+        margin-left:10px;
+    }
+}
